@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consulta de Propiedades de String</title>
+    <link rel="stylesheet" type="text/css" href="css/styles1.css">
+</head>
+<body>
+    <header>
+        <h1>Retos de javascript</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="reto1.html">Reto 1</a></li>
+            <li><a href="reto2.html">Reto 2</a></li>
+            <li><a href="reto3.html">Reto 3</a></li>
+            <li><a href="reto4.html">Reto 4</a></li>
+            <li><a href="reto5.html">Reto 5</a></li>
+            <li><a href="reto6.html">Reto 6</a></li>
+            <li><a href="reto7.html">Reto 7</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Consulta de Propiedades de String</h1>
+        <form id="consultaForm">
+            <div class="form-group">
+                <label for="palabra">Ingrese una palabra:</label>
+                <input type="text" id="palabra" required>
+            </div>
+            <div class="form-group">
+                <label for="opcion">Seleccione una opción:</label>
+                <select id="opcion">
+                    <option value="longitud">Longitud de la palabra</option>
+                    <option value="mayusculas">Palabra en mayúsculas</option>
+                    <option value="minusculas">Palabra en minúsculas</option>
+                    <option value="primer_caracter">Primer carácter de la palabra</option>
+                </select>
+            </div>
+            <button type="submit" onclick="consultarPropiedad()">Consultar</button>
+        </form>
+    </div>
+    <script src="js/reto_1.js">
+    </script>
+</body>
+</html>

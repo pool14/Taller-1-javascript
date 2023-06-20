@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Comprobación de selección de instructor</title>
+  <link rel="stylesheet" type="text/css" href="css/styles3.css">
+</head>
+<body>
+  <header>
+    <h1>Retos de javascript</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="reto1.html">Reto 1</a></li>
+        <li><a href="reto2.html">Reto 2</a></li>
+        <li><a href="reto3.html">Reto 3</a></li>
+        <li><a href="reto4.html">Reto 4</a></li>
+        <li><a href="reto5.html">Reto 5</a></li>
+        <li><a href="reto6.html">Reto 6</a></li>
+        <li><a href="reto7.html">Reto 7</a></li>
+    </ul>
+</nav>
+  <h1>Comprobacion de seleccion de instructor</h1>
+  
+  <form id="selection-form">
+    <label for="nombre">Nombre:</label>
+    <select id="nombre">
+      <option value="">Seleccione un nombre</option>
+      <option value="Tatiana">Tatiana</option>
+      <option value="erick">erick</option>
+      <option value="johan">johan</option>
+    </select>
+
+    <label for="apellido">Apellido:</label>
+    <select id="apellido">
+      <option value="">Seleccione un apellido</option>
+      <option value="cabrera">cabrera</option>
+      <option value="granados">granados</option>
+      <option value="quintero">quintero</option>
+    </select>
+
+    <label for="actividad">Actividad:</label>
+    <select id="actividad">
+      <option value="">Seleccione una actividad</option>
+      <option value="java">java</option>
+      <option value="java avanzado">java avanzado</option>
+      <option value="php">php</option>
+    </select>
+
+    <button type="button" onclick="comprobarSeleccion()">Comprobar</button>
+  </form>
+
+  <p id="resultado"></p>
+
+  <script src="js/reto_5.js"></script>
+</body>
+</html>

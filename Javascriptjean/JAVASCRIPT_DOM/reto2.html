@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eventos JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="css/styles2.css">
+</head>
+<body>
+    <header>
+        <h1>Retos de javascript</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="reto1.html">Reto 1</a></li>
+            <li><a href="reto2.html">Reto 2</a></li>
+            <li><a href="reto3.html">Reto 3</a></li>
+            <li><a href="reto4.html">Reto 4</a></li>
+            <li><a href="reto5.html">Reto 5</a></li>
+            <li><a href="reto6.html">Reto 6</a></li>
+            <li><a href="reto7.html">Reto 7</a></li>
+        </ul>
+    </nav>
+    <h1>Eventos JavaScript</h1>
+    <table>
+        <tr>
+            <th>Evento</th>
+            <th>Ejemplo</th>
+        </tr>
+        <tr>
+            <td>click</td>
+            <td>Se activa cuando se hace clic en un elemento HTML.</td>
+            <td><button onclick="alert('¡Haz hecho clic en el botón!')">Haz clic</button></td>
+        </tr>
+        <tr>
+            <td>keydown</td>
+            <td>Se activa cuando se presiona una tecla en el teclado.</td>
+            <td><input type="text" onkeydown="alert('Has presionado una tecla')">Presiona una tecla</td>
+        </tr>
+        <tr>
+            <td>keyup</td>
+            <td>Se activa cuando se suelta una tecla en el teclado.</td>
+            <td><input type="text" onkeyup="alert('Has soltado una tecla')">Suelta una tecla</td>
+        </tr>
+        <tr>
+            <td>mouseover</td>
+            <td>Se activa cuando el puntero del mouse se mueve sobre un elemento.</td>
+            <td><div onmouseover="alert('Pasa el cursor sobre mí')">Pasa el cursor aquí</div></td>
+        </tr>
+        <tr>
+            <td>mouseout</td>
+            <td>Se activa cuando el puntero del mouse se aleja de un elemento.</td>
+            <td><div onmouseout="alert('Aleja el cursor de mí')">Aleja el cursor</div></td>
+        </tr>
+        <tr>
+            <td>change</td>
+            <td>Se activa cuando el valor de un elemento cambia, como un campo de texto o un menú desplegable.</td>
+            <td><input type="text" onchange="alert('El valor ha cambiado')" placeholder="Escribe algo"></td>
+        </tr>
+        <tr>
+            <td>submit</td>
+            <td>Se activa cuando se envía un formulario.</td>
+            <td>
+                <form onsubmit="event.preventDefault(); alert('Formulario enviado')">
+                    <input type="text" placeholder="Nombre">
+                    <button type="submit">Enviar</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>load</td>
+            <td>Se activa cuando se carga por completo un documento o recurso web.</td>
+            <td><body onload="alert('¡La página se ha cargado!')"></td>
+        </tr>
+        <tr>
+            <td>scroll</td>
+            <td>Se activa cuando se desplaza el contenido de un elemento mediante la barra de desplazamiento.</td>
+            <td><div style="height: 200px; width: 200px; overflow: scroll;" onscroll="alert('Te estás desplazando')">Desplázate</div></td>
+        </tr>
+        <tr>
+            <td>resize</td>
+            <td>Se activa cuando se cambia el tamaño de la ventana del navegador.</td>
+            <td><body onresize="alert('La ventana se ha redimensionado')"></td>
+        </tr>
+    </table>
+</body>
+</html>

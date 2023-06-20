@@ -1,0 +1,151 @@
+/* Estilos para el cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+  background-color: #f5f5f5;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  background-color: #ddd;
+}
+
+
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    color: #333;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .card {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .result {
+    margin-top: 10px;
+  }
+  
+  /* Estilos específicos */
+  #circleModal,
+  #triangleModal,
+  #rectangleModal,
+  #squareModal {
+    display: none;
+  }
+  
+  #circleModal input,
+  #triangleModal input,
+  #rectangleModal input,
+  #squareModal input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  #circleModal button,
+  #triangleModal button,
+  #rectangleModal button,
+  #squareModal button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  #circleResult,
+  #triangleResult,
+  #rectangleResult,
+  #squareResult {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="./css/styles4.css">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Retos de JavaScript</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="reto1.html">Reto 1</a></li>
+        <li><a href="reto2.html">Reto 2</a></li>
+        <li><a href="reto3.html">Reto 3</a></li>
+        <li><a href="reto4.html">Reto 4</a></li>
+        <li><a href="reto5.html">Reto 5</a></li>
+        <li><a href="reto6.html">Reto 6</a></li>
+        <li><a href="reto7.html">Reto 7</a></li>
+    </ul>
+</nav>
+    <div class="card">
+      <h1>Figuras Geométricas</h1>
+    </div>
+
+
+    <div class="card">
+        <button onclick="openModal('circle')">Círculo</button>
+      </div>
+
+    <div class="card">
+      <button onclick="openModal('triangle')">Triángulo</button>
+    </div>
+  
+    <div class="card">
+      <button onclick="openModal('rectangle')">Rectángulo</button>
+    </div>
+  
+    <div class="card">
+      <button onclick="openModal('square')">Cuadrado</button>
+    </div>
+  
+    <div id="circleModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('circle')">&times;</span>
+        <h2>Círculo</h2>
+        <label for="radioCirculo">Radio:</label>
+        <input type="number" id="radioCirculo">
+        <button onclick="calcularAreaCirculo()">Área</button>
+        <button onclick="calcularPerimetroCirculo()">Perímetro</button>
+        <div id="resultadoCirculo" class="result"></div>
+      </div>
+    </div>
+  
+    <div id="triangleModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('triangle')">&times;</span>
+        <h2>Triángulo</h2>
+        <label for="baseTriangulo">Base:</label>
+        <input type="number" id="baseTriangulo">
+        <label for="alturaTriangulo">Altura:</label>
+        <input type="number" id="alturaTriangulo">
+        <button onclick="calcularAreaTriangulo()">Área</button>
+        <button onclick="calcularPerimetroTriangulo()">Perímetro</button>
+        <div id="resultadoTriangulo" class="result"></div>
+      </div>
+    </div>
+  
+    <div id="rectangleModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('rectangle')">&times;</span>
+        <h2>Rectángulo</h2>
+        <label for="baseRectangulo">Base:</label>
+        <input type="number" id="baseRectangulo">
+        <label for="alturaRectangulo">Altura:</label>
+        <input type="number" id="alturaRectangulo">
+        <button onclick="calcularAreaRectangulo()">Área</button>
+        <button onclick="calcularPerimetroRectangulo()">Perímetro</button>
+        <div id="resultadoRectangulo" class="result"></div>
+      </div>
+    </div>
+  
+    <div id="squareModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('square')">&times;</span>
+        <h2>Cuadrado</h2>
+        <label for="ladoCuadrado">Lado:</label>
+        <input type="number" id="ladoCuadrado">
+        <button onclick="calcularAreaCuadrado()">Área</button>
+        <button onclick="calcularPerimetroCuadrado()">Perímetro</button>
+        <div id="resultadoCuadrado" class="result"></div>
+      </div>
+    </div>
+    <script src="js/reto_6.js"></script>
+</body>
+</html>

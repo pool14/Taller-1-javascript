@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="author" content="Jeanpaol López">
+  <meta name="description" content="Formulario de registro de usuario">
+  <meta name="keywords" content="registro de usuario, formulario de registro, crear cuenta, registro en línea">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro de Usuario</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles5.css">
+</head>
+
+<body class="text-center">
+  <header>
+    <h1>Registro de Usuario</h1>
+  </header>
+
+  <section>
+    <div class="form-container">
+      <form id="validarFormulario" novalidate>
+        <div class="form-group">
+          <label for="selectTipoDocumento">Tipo de documento:</label>
+          <select id="selectTipoDocumento" class="form-control" required>
+            <option value="">Seleccione</option>
+            <option value="CC">Cédula de ciudadanía</option>
+            <option value="TI">Tarjeta de identidad</option>
+          </select>
+        </div>
+        <div id="inputNumeroDocumento" class="form-group">
+          <label>No. Documento:</label>
+          <input type="number" id="numeroDocumento" name="No documento" class="form-control" required  minlength="5">
+          <div class="feedback"></div>
+        </div>
+        <div id="inputNombre" class="form-group">
+          <label >Nombre:</label>
+          <input type="text" id="Nombre" name="nombre" class="form-control" required minlength="1">
+          <div class="feedback"></div>
+        </div>
+        <div id="inputApellido" class="form-group">
+          <label >Apellido:</label>
+          <input type="text" id="Apellido" name="apellido" class="form-control" required  minlength="1">
+          <div class="feedback"></div>
+        </div>
+        <div id="inputFechaNacimiento" class="form-group">
+          <label>Fecha de Nacimiento:</label>
+          <input type="date" id="FechaNacimiento" name="fechaNacimiento" class="form-control" required min="2002-01-01">
+          <div class="feedback"></div>
+        </div>
+        <div id="inputEmail" class="form-group">
+          <label>Correo electrónico:</label>
+          <input type="email" id="correoElectronico" name="email" class="form-control" required >
+          <div class="feedback"></div>
+        </div>
+        <div id="inputPassword" class="form-group">
+          <label>Contraseña:</label>
+          <input type="password" id="Password" name="password" class="form-control" required >
+          <div class="feedback"></div>
+        </div>
+        <div id="inputConfirmarPassword" class="form-group">
+          <label>Confirmar contraseña:</label>
+          <input type="password" id="confirmarPassword" name="password" class="form-control" required>
+          <div class="feedback"></div>
+        </div>
+        <div class="form-group">
+          <label for="checkboxTerminos">Aceptar Términos de uso:</label>
+          <input type="checkbox" id="checkboxTerminos" required>
+        </div>
+        <div class="form-group">
+          <button type="button" onclick="mostrarTerminos()">Ver Términos de uso</button>
+          <button type="submit">Registrarse</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <div id="modalTerminos" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarTerminos()">&times;</span>
+      <h2>Términos de Uso</h2>
+      <p>terminos y condiciones</p>
+    </div>
+  </div>
+
+  <script src="js/reto_7.js"></script>
+</body>
+</html>
